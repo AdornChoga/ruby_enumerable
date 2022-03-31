@@ -1,4 +1,4 @@
-require_relative './enumerables.rb'
+require_relative 'enumerables.rb'
 
 class MyList
   include MyEnumerable
@@ -8,7 +8,7 @@ class MyList
   end
 
   def each
-    for n in @list do
+    @list.each do |n|
       yield n
     end
   end
